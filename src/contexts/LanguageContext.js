@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const LanguageContext = React.createContext({
-    language: null,
+    language: 'French',
     words: [],
     totalScore: 0,
     error: null,
@@ -15,7 +15,7 @@ export default LanguageContext
 
 export class LanguageProvider extends Component {
     state = {
-        language: null,
+        language: 'French',
         words: [],
         totalScore: 0,
         error: null
