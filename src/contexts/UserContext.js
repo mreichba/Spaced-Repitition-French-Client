@@ -113,7 +113,6 @@ export class UserProvider extends Component {
   }
 
   setLanguage = language => {
-    console.log(language, '------------')
     this.setState({
         language: language.name,
         totalScore: language.total_score

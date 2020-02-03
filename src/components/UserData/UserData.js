@@ -19,16 +19,16 @@ export default class UserData extends Component {
         return (
             <div className="userData">
                 <h3 className="userData_lang">You are learning: {this.context.language}</h3>
-                <p className="userData_score">Total score for correct answers: {this.context.totalScore}</p>
+                <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start Learning</Link></button>
                 <div className="wordBox">
                     <h4 className="wordHeader">Words</h4>
                     <h4 className="wordScores">Correct</h4>
                     <h4 className="wordScores">Incorrect</h4>
+                    <p className="userData_score">Total Score: {this.context.totalScore}</p>
                     <div className="wordListBox">
                         {words}
                     </div>
                 </div>
-                <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start Learning</Link></button>
             </div>
         )
     }
