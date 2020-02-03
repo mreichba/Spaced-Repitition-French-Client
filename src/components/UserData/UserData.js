@@ -18,9 +18,9 @@ export default class UserData extends Component {
             <div className="userData">
                 <h3 className="userData_lang">You are learning: {this.context.language}</h3>
                 <div className="wordBox">
-                    <h4 className="wordHeaders">Words</h4>
-                    <h4 className="wordHeaders">Correct</h4>
-                    <h4 className="wordHeaders">Incorrect</h4>
+                    <h4 className="wordHeader">Words</h4>
+                    <h4 className="wordScores">Correct</h4>
+                    <h4 className="wordScores">Incorrect</h4>
                     <div className="wordListBox">
                         {words}
                     </div>
