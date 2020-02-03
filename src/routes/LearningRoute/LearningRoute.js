@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './LearningRoute.css'
 
 class LearningRoute extends Component {
   render() {
     return (
-      <section>
-        implement and style me
+      <section className='learnSec'>
+        <h2>Language Practice</h2>
       </section>
     );
   }
