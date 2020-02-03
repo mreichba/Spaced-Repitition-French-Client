@@ -24,8 +24,15 @@ header {
   z-index: 10;
   padding: 5px;
 }
-
+.logoutBar{
+  display: flex;
+  justify-content: space-around;
+}
 .reg{
   margin-top: 150px;
   text-align: center;
+}
+.userHeader{
+  color: white;
+  display: flex;
 }
