@@ -18,7 +18,7 @@ class DashboardRoute extends Component {
   render() {
     return (
       <section className='dash'>
-        <h2>Dashboard</h2>
+        <h2>My Dashboard</h2>
         <UserData />
         {/* <button>Start Practicing</button>
         <h3>Words to Practice</h3>
