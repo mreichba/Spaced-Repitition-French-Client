@@ -5,22 +5,24 @@ const LanguageContext = React.createContext({
     words: [],
     totalScore: 0,
     error: null,
-    setLanguage: () => {},
-    setWords: () => {},
-    setError: () => {},
-    clearError: () => {}
+    setLanguage: () => { },
+    setWords: () => { },
+    setError: () => { },
+    clearError: () => { }
 })
 
 export default LanguageContext
 
 export class LanguageProvider extends Component {
-    state = {
-        language: 'French',
-        words: [],
-        totalScore: 0,
-        error: null
+    constructor(props) {
+        super(props)
+        this.state = {
+            language: null,
+            words: [],
+            totalScore: 0,
+            error: null
+        }
     }
-
     setLanguage = language => {
         this.setState({
             language: language.name,
