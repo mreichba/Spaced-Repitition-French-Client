@@ -10,13 +10,22 @@ li {
     list-style-type: none;
     display: inline-block;
     font-size: 18px;
+    margin-left: 110px;
+    margin-right: 20px
+}
+.userData_lang, .userData_score { 
+    text-align: center; margin: 10px auto; 
 }
 
 .wordName {
     float: left;
     margin-left: -30px;
 }
-
+.answers{
+    display: flex;
+    justify-content: flex-end;
+    
+}
 .wordCorrect {
     margin-right: 5px;
 }
@@ -27,7 +36,7 @@ li {
 }
 
 .wordUList {
-    border: 1px solid black;
+    
 }
 
 .wordListBox {
