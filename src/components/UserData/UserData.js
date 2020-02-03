@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import  { Link } from 'react-router-dom';
-import LanguageContext from '../../contexts/LanguageContext';
+import UserContext from '../../contexts/UserContext';
 import './UserData.css'
 
 export default class UserData extends Component {
-    static contextType = LanguageContext
+    static contextType = UserContext
 
     render() {
         return (

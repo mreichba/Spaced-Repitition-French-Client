@@ -6,8 +6,13 @@ import IdleService from '../services/idle-service'
 const UserContext = React.createContext({
   user: {},
   error: null,
-  setError: () => {},
-  clearError: () => {},
+  language: null,
+  words: [],
+  totalScore: [],
+  setLanguage: () => { },
+  setWords: () => { },
+  setError: () => { },
+  clearError: () => { },
   setUser: () => {},
   processLogin: () => {},
   processLogout: () => {},
@@ -18,7 +23,13 @@ export default UserContext
 export class UserProvider extends Component {
   constructor(props) {
     super(props)
-    const state = { user: {}, error: null }
+    const state = { 
+      user: {}, 
+      error: null, 
+      language: null,
+      words: [],
+      totalScore: [],
+    }
 
     const jwtPayload = TokenService.parseAuthToken()
 
@@ -101,6 +112,22 @@ export class UserProvider extends Component {
       })
   }
 
+  setLanguage = language => {
+    console.log(language, '------------')
+    this.setState({
+        language: language.name,
+        totalScore: language.total_score
+    })
+  }
+
+  setWords = words => {
+    this.setState({ words })
+  }
+
+  setTotalScore = (totalScore) => {
+    this.setState({ totalScore })
+  }
+
   render() {
     const value = {
       user: this.state.user,
@@ -110,6 +137,12 @@ export class UserProvider extends Component {
       setUser: this.setUser,
       processLogin: this.processLogin,
       processLogout: this.processLogout,
+      language: this.state.language,
+      words: this.state.words,
+      totalScore: this.state.totalScore,
+      setLanguage: this.setLanguage,
+      setWords: this.setWords,
+      setTotalScore: this.setTotalScore,
     }
     return (
       <UserContext.Provider value={value}>
