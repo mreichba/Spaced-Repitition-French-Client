@@ -5,3 +5,25 @@
 .startLearning_btn {
     font-size: 16px;
 }
+
+li {
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.wordUList {
+    display: flex;
+    border: 1px solid black;
+}
+
+.wordListBox {
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.wordHeaders {
+    display: inline-block;
+    padding: 0 20px;
+}
