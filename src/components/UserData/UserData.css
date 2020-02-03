@@ -8,22 +8,44 @@
 
 li {
     list-style-type: none;
-    justify-content: space-between;
-    flex-direction: row;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.wordName {
+    float: left;
+    margin-left: -30px;
+}
+
+.wordCorrect {
+    margin-right: 5px;
+}
+
+.wordIncorrect {
+    float: right;
+    padding-right: 10px;
 }
 
 .wordUList {
-    display: flex;
     border: 1px solid black;
 }
 
 .wordListBox {
     border: 1px solid black;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 37%;
+    margin-right: 37%;
 }
 
-.wordHeaders {
+.wordHeader, .wordScores {
     display: inline-block;
-    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.wordHeader {
+    padding-right: 30px;
+    margin-left: 30px;
+}
+
+.wordScores {
+    padding-left: 60px;
 }
