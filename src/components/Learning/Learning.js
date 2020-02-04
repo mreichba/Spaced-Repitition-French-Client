@@ -97,7 +97,7 @@ class Learning extends Component {
                     </main>
                 </div>
                 <div className="learning_prompt">
-                    <h2>Translate the word: </h2>
+                    <h2>Translate the word:</h2>
                     <span className="learning_word">{this.state.nextWord}</span>
                 </div>
                 <div className="displayFeedback">
@@ -119,13 +119,13 @@ class Learning extends Component {
                     >
                         <Label 
                             className="learning_answer_form_label"
-                            htmlFor="learn_guess_input"
+                            htmlFor="learn-guess-input"
                         >
                             What's the translation for this word?
                         </Label>
                         <div className="learning_answer_form_inputs">
                             <Input
-                            id="learn_guess_input"
+                            id="learn-guess-input"
                             type="text"
                             required
                             onChange={e => this.updateGuess(e.target.value)}
