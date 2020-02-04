@@ -86,7 +86,7 @@ class Learning extends Component {
 
     render() {
         return (
-            <div className="learning">
+            <div className="learningContainer">
                 {' '}
                 <div className="learning_stats">
                     <h4 className="learning_correct">
