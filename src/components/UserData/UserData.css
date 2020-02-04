@@ -21,7 +21,7 @@ li {
 
 .wordUList{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10px 0;
 }
 
@@ -30,16 +30,10 @@ li {
     justify-content: space-around;
 }
 
-/* .answers{
-    display: flex;
-    width: 60%; 
-    justify-content: space-around;
-   
-} */
 
 .wordName {
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
     padding-left: 10px;
 }
 
