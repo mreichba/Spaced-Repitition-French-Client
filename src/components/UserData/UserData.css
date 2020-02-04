@@ -38,7 +38,10 @@ li {
 }
 
 .wordName {
+    display: flex;
+    justify-content: flex-start;
     width: 40%;
+    padding-left: 10px;
 }
 
 .head{
