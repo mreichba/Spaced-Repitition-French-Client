@@ -31,7 +31,7 @@ describe(`User story: Presented with word`, function() {
     cy.fixture('language-head.json')
       .then(languageHeadFixture => {
         cy.get('main').within($main => {
-          cy.get('h2')
+          cy.get('h3')
             .should('have.text', 'Translate the word:')
             .siblings('span')
             .should('have.text', languageHeadFixture.nextWord)
