@@ -8,9 +8,9 @@ class LearningRoute extends Component {
 
     const words = this.context.words.map((word, idx) => (
       <ul className='wordContainer' key={idx}>
-          <li className="currentWord">{word.original}</li>
-          <li className="wordCorrect_count">{word.correct_count}</li>
-          <li className="wordIncorrect_count">{word.incorrect_count}</li>
+        <li className="currentWord">{word.original}</li>
+        <li className="wordCorrect_count">{word.correct_count}</li>
+        <li className="wordIncorrect_count">{word.incorrect_count}</li>
       </ul>
     ))
 
@@ -18,6 +18,12 @@ class LearningRoute extends Component {
       <section className="learnSec">
         <h2>Language Practice</h2>
         <h4 className="learn_display">{words[0]}</h4>
+        <form>
+          <label htmlFor='translation'></label><br />
+          <input type='text' placeholder='Enter Translation' id='translation' name='translation' required /><br />
+
+          <button type='submit' className='transSub button'>Submit</button>
+        </form>
       </section>
     );
   }
