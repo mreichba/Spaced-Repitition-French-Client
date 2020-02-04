@@ -30,17 +30,16 @@ li {
     justify-content: space-around;
 }
 
-.answers{
+/* .answers{
     display: flex;
     width: 60%; 
     justify-content: space-around;
    
-}
+} */
 
 .wordName {
     display: flex;
     justify-content: flex-start;
-    width: 40%;
     padding-left: 10px;
 }
 
