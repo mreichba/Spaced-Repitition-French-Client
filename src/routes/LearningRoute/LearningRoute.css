@@ -2,3 +2,24 @@
   margin-top: 150px;
   text-align: center;
 }
+
+.learn_display {
+  margin-top: 20px;
+}
+
+.wordContainer {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.currentWord {
+  float: left;
+}
+
+.wordCorrect_count {
+  text-align: center;
+}
+
+.wordIncorrect_count {
+  float: right;
+}
