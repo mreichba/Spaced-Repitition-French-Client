@@ -3,8 +3,9 @@
 }
 
 .startLearning_btn {
-    font-size: 16px;
-    margin: 15px 0 15px;
+    margin: 15px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 li {
@@ -20,16 +21,22 @@ li {
 
 .wordUList{
     display: flex;
-    justify-content: space-around;
-    padding: 0
+    justify-content: space-between;
+    padding: 0 10px 0;
 }
 
 .head{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.answers{
+    display: flex;
+   width: 60%; 
+   justify-content: space-around;
+   
 }
 .wordName {
-
+width: 40%;
 }
 
 .wordCorrect {

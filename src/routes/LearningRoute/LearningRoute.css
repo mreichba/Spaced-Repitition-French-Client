@@ -37,4 +37,6 @@
   font-size: 24px;
   border: 1px solid black;
   padding-left: 10px;
+  width: 90%;
+  max-width: 300px;
 }
