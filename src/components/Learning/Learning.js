@@ -66,11 +66,15 @@ class Learning extends Component {
     rightWrong = answer => {
         if (answer) {
             return (
-                <h2 className='answerh2'>Correct!</h2>
+                <h2 className='second-h2' style={{ color: 'green' }}>
+                    {`You were correct! :D`}
+                </h2>
             );
         } else {
             return (
-                <h2 className="answerh2">Incorrect..</h2>
+                <h2 className='second-h2' style={{ color: 'red' }}>
+                {`Good try, but not quite right :(`}
+            </h2>
             );
         }
     };
@@ -92,15 +96,15 @@ class Learning extends Component {
                     </h4>
                 </div>
                 <div className="learning_total_score">
-                    <main classname="displayScore">
-                        <p>Your total score is: {this.state.totalScore}</p>
+                    <main className="DisplayScore">
+                        <p className="DisplayScorep">Your total score is: {this.state.totalScore}</p>
                     </main>
                 </div>
-                <div className="learning_prompt">
-                    <h2>Translate the word:</h2>
+                <div className="Learning__Prompt">
+                    <h3 className="translate-the-word">Translate the word:</h3>
                     <span className="learning_word">{this.state.nextWord}</span>
                 </div>
-                <div className="displayFeedback">
+                <div className="DisplayFeedback">
                     {this.state.answer && (
                         <div>
                             <p className="learning_guess">
