@@ -102,7 +102,7 @@ class Learning extends Component {
                     </main>
                 </div>
                 <div className="Learning__Prompt">
-                        <h3 className="translateWord">Translate the word:</h3>
+                        <h2 className="translateWord">Translate the word:</h2>
                         <span className="learning__word">{this.state.nextWord}</span>
                 </div>
                 <div className="DisplayFeedback">
