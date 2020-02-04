@@ -10,24 +10,24 @@ export default class UserData extends Component {
         const words = this.context.words.map((word, idx) => (
             <ul className='wordUList' key={idx}>
                 <li className="wordName">{word.original}</li>
-                <div className='answers'>
-                    <li className="wordCorrect">{word.correct_count}</li>
-                    <li className="wordIncorrect">{word.incorrect_count}</li>
-                </div>
+                <li className="wordCorrect">{word.correct_count}</li>
+                <li className="wordIncorrect">{word.incorrect_count}</li>
             </ul>
         ))
         return (
             <div className="userData">
                 <h3 className="userData_lang">You are learning: {this.context.language}</h3>
-                <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start Learning</Link></button>
                 <div className="wordBox">
-                    <h4 className="wordHeader">Words</h4>
-                    <h4 className="wordScores">Correct</h4>
-                    <h4 className="wordScores">Incorrect</h4>
                     <p className="userData_score">Total Score: {this.context.totalScore}</p>
                     <div className="wordListBox">
+                        <div className='head'>
+                            <h4 className="wordHeader">Words</h4>
+                            <h4 className="wordScores">Correct</h4>
+                            <h4 className="wordScores">Incorrect</h4>
+                        </div>
                         {words}
                     </div>
+                    <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start Learning</Link></button>
                 </div>
             </div>
         )

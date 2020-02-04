@@ -1,61 +1,61 @@
+.userData_link {
+    color: black;
+}
+
 .startLearning_btn {
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: black;
-    color: white;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 li {
     list-style-type: none;
     display: inline-block;
     font-size: 18px;
-    margin-left: 110px;
-    margin-right: 20px
+  
+}
+.userData_lang, .userData_score { 
+    text-align: center; 
+    margin: 10px auto; 
 }
 
-.userData_score {
-   display: inline-block;
-   padding-left: 30px;
-}
-
-.wordName {
-    float: left;
-    margin-left: -30px;
-}
-.answers{
+.wordUList{
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: space-around;
+    padding: 0
 }
+
+.head{
+    display: flex;
+    justify-content: space-evenly;
+}
+.wordName {
+
+}
+
 .wordCorrect {
-    margin-right: 5px;
+    
 }
 
 .wordIncorrect {
-    float: right;
-    padding-right: 10px;
+   
+    
 }
 
-.wordUList {
-    
+.head{
+    border-bottom: 1px solid black;
 }
 
 .wordListBox {
     border: 1px solid black;
-    margin-left: 37%;
-    margin-right: 37%;
+    margin: 0 auto 0;
+    max-width: 500px;
 }
 
-.wordHeader, .wordScores {
-    display: inline-block;
-    margin-top: -20px;
-}
 
 .wordHeader {
-    padding-right: 30px;
-    margin-left: 30px;
+    
 }
 
 .wordScores {
-    padding-left: 60px;
+    
 }
