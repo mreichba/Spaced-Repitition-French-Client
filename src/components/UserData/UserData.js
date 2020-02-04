@@ -9,8 +9,11 @@ export default class UserData extends Component {
     render() {
         const words = this.context.words.map((word, idx) => (
             <ul className='wordUList' key={idx}>
-                <li className="wordName"><h4>{word.original}</h4> correct answer count: {word.correct_count} incorrect answer count: {word.incorrect_count}</li>
-
+                <li className="wordName">
+                    <h4>{word.original}</h4>
+                    <div>correct answer count: {word.correct_count}</div>
+                    <div>incorrect answer count: {word.incorrect_count}</div>
+                </li>
             </ul>
         ))
 
