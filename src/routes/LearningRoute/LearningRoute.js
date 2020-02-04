@@ -1,32 +1,34 @@
 import React, { Component } from 'react'
-import UserContext from '../../contexts/UserContext'
+import Learning from '../../components/Learning/Learning'
+import LanguageApiService from '../../services/language-api-service'
 import './LearningRoute.css'
 
 class LearningRoute extends Component {
-  static contextType = UserContext;
+  constructor(props) {
+    super(props)
+    this.state = {
+      head: {
+        nextWord: '',
+        wordCorrectCount: 0,
+        wordIncorrectCount: 0,
+        totalScore: 0
+      }
+    };
+  }
+
+  componentDidMount() {
+    LanguageApiService.getHead().then(res => {
+      this.setState({ head: res });
+    });
+  }
   render() {
-
-    const words = this.context.words.map((word, idx) => (
-      <ul className='wordContainer' key={idx}>
-        <li className="currentWord">{word.original}</li>
-        <li className="wordCorrect_count">{word.correct_count}</li>
-        <li className="wordIncorrect_count">{word.incorrect_count}</li>
-      </ul>
-    ))
-
     return (
-      <section className="learnSec">
-        <h2>Language Practice</h2>
-        <h4 className="learn_display">{words[0]}</h4>
-        <form>
-          <label htmlFor='translation'></label><br />
-          <input type='text' placeholder='Enter Translation' id='translation' name='translation' required /><br />
-
-          <button type='submit' className='transSub button'>Submit</button>
-        </form>
+      <section>
+        <Learning key={this.state.head.nextWord} head={this.state.head} />
       </section>
     );
   }
 }
+
 
 export default LearningRoute
