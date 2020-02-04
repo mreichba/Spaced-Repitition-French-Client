@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Button from '../Button/Button'
 import { Input, Label } from '../Form/Form'
 import LanguageApiService from '../../services/language-api-service';
+import './Learning.css'
 
 class Learning extends Component {
     static correctIncorrect;
@@ -57,7 +58,7 @@ class Learning extends Component {
             const { wordCorrectCount, wordIncorrectCount } = res;
             this.setState({ wordCorrectCount, wordIncorrectCount });
         })
-        this.setState({ 
+        this.setState({
             showinput: true,
             answer: ''
         });
@@ -114,10 +115,10 @@ class Learning extends Component {
                 </div>
                 {this.state.showinput && (
                     <form
-                    className="learning_answer_form"
-                    onSubmit={e => this.postGuessHandler(e)}
+                        className="learning_answer_form"
+                        onSubmit={e => this.postGuessHandler(e)}
                     >
-                        <Label 
+                        <Label
                             className="learning_answer_form_label"
                             htmlFor="learn-guess-input"
                         >
@@ -125,11 +126,11 @@ class Learning extends Component {
                         </Label>
                         <div className="learning_answer_form_inputs">
                             <Input
-                            id="learn-guess-input"
-                            type="text"
-                            required
-                            onChange={e => this.updateGuess(e.target.value)}
-                            />
+                                id="learn-guess-input"
+                                type="text"
+                                required
+                                onChange={e => this.updateGuess(e.target.value)}
+                            /><br />
                             <Button type="submit">Submit your answer</Button>
                         </div>
                     </form>
