@@ -27,6 +27,7 @@ header {
 .logoutBar{
   display: flex;
   justify-content: space-around;
+  font-size: 20px;
 }
 .reg{
   margin-top: 150px;
