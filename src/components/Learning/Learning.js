@@ -14,7 +14,7 @@ class Learning extends Component {
             answer: '',
             isCorrect: '',
             nextWord: this.props.head.nextWord,
-            currentWord: this.props.head.currentWord,
+            currentWord: '',
             totalScore: this.props.head.totalScore,
             wordCorrectCount: this.props.head.wordCorrectCount,
             wordIncorrectCount: this.props.head.wordIncorrectCount,
