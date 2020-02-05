@@ -1,6 +1,7 @@
 .learning{
-  margin-top: 150px;
+  margin: 150px 15px 0;
   text-align: center;
+
 }
 
 .learning_answer_form_inputs{
@@ -18,4 +19,17 @@
 .Learning__Prompt {
   margin:20px;
 }
+
+.ansSubmit{
+  width: 200px;
+}
+
+.try_another{
+  width: 200px;
+}
+
+.DisplayScorep {
+  font-size: 18px;
+}
+
 

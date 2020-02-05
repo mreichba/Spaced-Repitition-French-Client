@@ -74,8 +74,8 @@ class Learning extends Component {
         } else {
             return (
                 <h2 className='second-h2' style={{ color: 'red' }}>
-                {`Good try, but not quite right :(`}
-            </h2>
+                    {`Good try, but not quite right :(`}
+                </h2>
             );
         }
     };
@@ -102,8 +102,8 @@ class Learning extends Component {
                     </main>
                 </div>
                 <div className="Learning__Prompt">
-                        <h2 className="translateWord">Translate the word:</h2>
-                        <span className="learning__word">{this.state.nextWord}</span>
+                    <h2 className="translateWord">Translate the word:</h2>
+                    <span className="learning__word">{this.state.nextWord}</span>
                 </div>
                 <div className="DisplayFeedback">
                     {this.state.answer && (
@@ -135,7 +135,7 @@ class Learning extends Component {
                                 required
                                 onChange={e => this.updateGuess(e.target.value)}
                             /><br />
-                            <Button type="submit">Submit your answer</Button>
+                            <Button type="submit" className='ansSubmit'>Submit your answer</Button>
                         </div>
                     </form>
                 )}
