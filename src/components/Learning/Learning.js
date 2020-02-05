@@ -101,10 +101,10 @@ class Learning extends Component {
                         <p className="DisplayScorep">Your total score is: {this.state.totalScore}</p>
                     </main>
                 </div>
-                <div className="Learning__Prompt">
+                {this.state.showinput && <div className="Learning__Prompt">
                         <h2 className="translateWord">Translate the word:</h2>
                         <span className="learning__word">{this.state.nextWord}</span>
-                </div>
+                </div>}
                 <div className="DisplayFeedback">
                     {this.state.answer && (
                         <div>
