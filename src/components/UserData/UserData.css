@@ -5,6 +5,7 @@
 .startLearning_btn {
     margin: 15px;
     font-size: 24px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -35,8 +36,6 @@ li {
 
 
 .wordName {
-    /* display: flex;
-    justify-content: flex-start; */
     padding-left: 10px;
 }
 
