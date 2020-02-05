@@ -14,6 +14,9 @@ li {
     font-size: 18px;
   
 }
+.userData_lang{
+    font-size: 20px;
+}
 .userData_lang, .userData_score { 
     text-align: center; 
     margin: 10px auto; 
@@ -46,4 +49,8 @@ li {
     margin: 0 auto 0;
     max-width: 500px;
     width: 90%;
+}
+
+.learningWords{
+    text-transform: capitalize;
 }

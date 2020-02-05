@@ -27,7 +27,7 @@ export default class UserData extends Component {
                             <h3 className="wordHeader">Words to practice</h3>
 
                         </div>
-                        {words}
+                        <span className='learningWords'>{words}</span>
                     </div>
                     <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start practicing</Link></button>
                 </div>
