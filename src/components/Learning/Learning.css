@@ -9,4 +9,13 @@
 
 .learning__word {
   color: black;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: Bold;
+  text-transform: capitalize;
 }
+
+.Learning__Prompt {
+  margin:20px;
+}
+
