@@ -12,4 +12,10 @@ FRONT END - REACT | HTML | CSS | JAVASCRIPT | CYPRESS | API
 BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS
 
 ### Screenshots
+![spaced-rep-dashboard-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.29.18%20PM.png)
 
+![spaced-rep-start-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.29.59%20PM.png)
+
+![spaced-rep-example-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.30.17%20PM.png)
+
+![spaced-rep-example-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.30.30%20PM.png)
