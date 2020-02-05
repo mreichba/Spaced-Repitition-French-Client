@@ -1,7 +1,13 @@
 .learning{
   margin: 150px 15px 0;
   text-align: center;
+}
 
+#learn-guess-input {
+  border: 1px solid black;
+  font-size: 18px;
+  background-color: white;
+  padding-left: 5px;
 }
 
 .learning_answer_form_inputs{
