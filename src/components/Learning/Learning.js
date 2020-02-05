@@ -132,6 +132,7 @@ class Learning extends Component {
                             <Input
                                 id="learn-guess-input"
                                 type="text"
+                                placeholder="Type answer here"
                                 required
                                 onChange={e => this.updateGuess(e.target.value)}
                             /><br />
