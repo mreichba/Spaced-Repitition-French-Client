@@ -1,5 +1,5 @@
 {
-  "name": "spaced-repitition",
+  "name": "mason-austin-learning-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
     "jwt-decode": "^2.2.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",
@@ -15,9 +16,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "set CI=true react-scripts test --colors",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "REACT_APP_API_BASE_URL=https://spaced-repetition-austin-mason.herokuapp.com/api npm run build",
+    "deploy": "now ./build",
+    "postdeploy": "now alias -A ./build/now.json",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
