@@ -20,7 +20,9 @@ class RegistrationRoute extends Component {
       <section className='reg'>
         <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
         <p>
-          Practice learning a language with the spaced repetition revision technique.
+          Want to learn a new language? Use our spaced repetition app to help with that!<br/>
+          This app uses spaced repetition to display a choice word from your list <br/>
+          and render the next word based upon a correct or incorrect attempt to translate.
         </p>
         <h2>Sign up</h2>
         <RegistrationForm
