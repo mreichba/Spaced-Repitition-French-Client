@@ -19,9 +19,8 @@ class LoginRoute extends Component {
 
   render() {
     return (
-      <section className='loginSec'>
-        <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
       <section className='loginSec' aria-live='polite'>
+      <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}

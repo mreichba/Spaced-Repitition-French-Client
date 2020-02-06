@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-#learn-guess-input {
+.input-form {
   border: 1px solid black;
   font-size: 18px;
   background-color: white;
