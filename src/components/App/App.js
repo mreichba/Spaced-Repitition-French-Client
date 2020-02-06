@@ -23,9 +23,9 @@ export default class App extends Component {
     return (
       <div className='App'>
         <Header />
-        <main aria-live='polite'>
+        <main>
           {hasError && (
-            <p>There was an error! Oh no!</p>
+            <p aria-live='polite'>There was an error! Oh no!</p>
           )}
           <Switch>
             <PrivateRoute
