@@ -18,7 +18,7 @@ class LoginRoute extends Component {
 
   render() {
     return (
-      <section className='loginSec'>
+      <section className='loginSec' aria-live='polite'>
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
