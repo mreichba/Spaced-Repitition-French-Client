@@ -131,6 +131,7 @@ class Learning extends Component {
                         <div className="learning_answer_form_inputs">
                             <Input
                                 aria-labelledby="learn-guess-input"
+                                className="input-form"
                                 type="text"
                                 placeholder="Type answer here"
                                 required
