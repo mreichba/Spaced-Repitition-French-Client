@@ -5,7 +5,7 @@
 .startLearning_btn {
     margin: 15px;
     font-size: 24px;
-    width: 200px;
+    width: auto;
     cursor: pointer;
 }
 
