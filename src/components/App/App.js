@@ -23,7 +23,7 @@ export default class App extends Component {
     return (
       <div className='App'>
         <Header />
-        <main>
+        <main aria-live='polite'>
           {hasError && (
             <p>There was an error! Oh no!</p>
           )}

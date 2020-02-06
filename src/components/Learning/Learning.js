@@ -102,8 +102,8 @@ class Learning extends Component {
                     </main>
                 </div>
                 {this.state.showinput && <div className="Learning__Prompt">
-                        <h2 className="translateWord">Translate the word:</h2>
-                        <span className="learning__word">{this.state.nextWord}</span>
+                    <h2 className="translateWord">Translate the word:</h2>
+                    <span className="learning__word">{this.state.nextWord}</span>
                 </div>}
                 <div className="DisplayFeedback">
                     {this.state.answer && (
@@ -130,7 +130,7 @@ class Learning extends Component {
                         </Label>
                         <div className="learning_answer_form_inputs">
                             <Input
-                                id="learn-guess-input"
+                                aria-labelledby="learn-guess-input"
                                 type="text"
                                 placeholder="Type answer here"
                                 required

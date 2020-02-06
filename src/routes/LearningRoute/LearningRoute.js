@@ -23,7 +23,7 @@ class LearningRoute extends Component {
   }
   render() {
     return (
-      <section>
+      <section >
         <Learning key={this.state.head.nextWord} head={this.state.head} />
       </section>
     );

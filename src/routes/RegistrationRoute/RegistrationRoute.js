@@ -17,8 +17,8 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section className='reg'>
-        <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
+      <section className='reg' aria-live='polite'>
+        <img src={Logo} className="spaced-logo" alt="spaced-rep-logo" />
         <p>
           Practice learning a language with the spaced repetition revision technique.
         </p>
