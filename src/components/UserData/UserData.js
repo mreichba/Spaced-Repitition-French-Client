@@ -29,7 +29,7 @@ export default class UserData extends Component {
                         </div>
                         <span className='learningWords'>{words}</span>
                     </div>
-                    <button className="startLearning_btn"><Link className="userData_link" to="/learn">Start practicing</Link></button>
+                    <button className="startLearning_btn"><Link className="userData_link" to="/learn" role='button'>Start practicing</Link></button>
                 </div>
             </div>
         )

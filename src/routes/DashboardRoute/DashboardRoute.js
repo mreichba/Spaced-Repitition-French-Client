@@ -17,7 +17,7 @@ class DashboardRoute extends Component {
 
   render() {
     return (
-      <section className='dash'>
+      <section className='dash' aria-live='polite'>
         <h2>My Dashboard</h2>
         <UserData />
       </section>

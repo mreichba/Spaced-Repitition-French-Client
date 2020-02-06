@@ -17,8 +17,8 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section className='reg'>
-        <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
+      <section className='reg' aria-live='polite'>
+        <img src={Logo} className="spaced-logo" alt="spaced-rep-logo" />
         <p>
           Want to learn a new language? Use our spaced repetition app to help with that!<br/>
           This app uses spaced repetition to display a choice word from your list <br/>
