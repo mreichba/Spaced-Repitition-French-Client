@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LoginForm from '../../components/LoginForm/LoginForm'
+import Logo from '../../Logo/spaced-rep-logo.png'
 import './LoginRoute.css'
 
 class LoginRoute extends Component {
@@ -19,6 +20,7 @@ class LoginRoute extends Component {
   render() {
     return (
       <section className='loginSec'>
+        <img src={Logo} className="spaced-logo"alt="spaced-rep-logo"/>
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
