@@ -1,5 +1,6 @@
 .userData_link {
     color: black;
+    text-transform: capitalize;
 }
 
 .startLearning_btn {
