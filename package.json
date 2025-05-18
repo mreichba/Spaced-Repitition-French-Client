@@ -1,5 +1,5 @@
 {
-  "name": "mason-austin-learning-app",
+  "name": "spaced-repetition-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,17 +15,14 @@
     "react-scripts": "2.1.5"
   },
   "engines": {
-  "node": "16.x"
+  "node": "18.x"
 },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "prebuild": "set CI=true react-scripts test --colors",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "REACT_APP_API_BASE_URL=https://spaced-repetition-austin-mason.herokuapp.com/api npm run build",
-    "deploy": "now ./build",
-    "postdeploy": "now alias -A ./build/now.json",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
